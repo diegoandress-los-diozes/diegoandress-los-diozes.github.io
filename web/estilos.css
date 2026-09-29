@@ -1,0 +1,31 @@
+body {
+    background-image: url("gta-6-official.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;    
+    align-items: center; 
+    margin: 0;
+    height: 100vh;
+}
+h1{
+    font-size:60px ;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    border: 10px solid purple;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 187, 0);
+}
+li{
+    color: white;
+    
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 30px;
+  margin: auto;
+  gap: 10px;
+}
