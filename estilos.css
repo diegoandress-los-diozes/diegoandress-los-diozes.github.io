@@ -1,7 +1,7 @@
 body {
     background-image: url("gta-6-official.png");
     background-size: cover;
-    background-position: center;
+    background-position: center 30px;
     background-repeat: no-repeat;
     justify-content: center;    
     align-items: center; 
@@ -17,15 +17,71 @@ h1{
     padding: 10px;
     background-color: rgb(255, 187, 0);
 }
-li{
+li {
     color: white;
-    
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
 }
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 30px;
-  margin: auto;
-  gap: 10px;
+
+li:hover {
+    color: purple;
+}
+ol {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 40px;
+    margin: auto;
+    gap: 300px;
+    border: none;
+}
+.cuadros {
+    text-align: center;
+}
+
+.morado {
+    width: 400px;
+    height: 700px;
+    background-color: black;
+    border: 5px solid purple;
+    color: white;
+    padding: 10px;
+    float: left;
+}
+.morado img{
+    width: 400px;
+    height: 280px;
+}
+
+.naranja {
+    width: 400px;
+    height: 700px;
+    background-color: black;
+    border: 5px solid orange;
+    color: white;
+    padding: 10px;
+    float: right;
+}
+.naranja img{
+    width: 400px;
+    height: 230px;
+}
+
+.cuadros h2 {
+    text-align: center;
+    color: orange;
+}
+
+.cuadros h3 {
+    color: purple;
+}
+
+.cuadros p {
+    text-align: justify;
+}
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 23%;
 }
