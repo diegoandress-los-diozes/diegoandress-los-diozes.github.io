@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url("gta-6-official.jpg");
+    background-size: cover;
+    background-position: center 109px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+header {
+    width: 100%;
+    padding: 20px 15px;
+}
+h1 {
+    font-size: clamp(30px, 5vw, 60px);
+    color: black;
+    margin: auto;
+    width: 92%;
+    max-width: 1100px;
+    border: 10px solid purple;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 187, 0);
+}
+.breadcrumbs {
+    width: 92%;
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 0 12px;
+}
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    list-style: none;
+    padding: 12px 16px;
+    margin: 0;
+    border: 1px solid rgba(255, 0, 200, 0.65);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.85);
+}
+.breadcrumbs li {
+    padding: 0;
+    color: white;
+    cursor: default;
+}
+.breadcrumbs li + li::before {
+    content: "›";
+    color: orange;
+    margin-right: 8px;
+    font-weight: bold;
+}
+.breadcrumbs a {
+    color: #ff55bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.breadcrumbs a:hover {
+    color: orange;
+}
+.breadcrumbs [aria-current="page"] {
+    color: white;
+    font-weight: bold;
+}
+.introduccion,
+.mapa-imagen {
+    width: 92%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.94);
+    color: white;
+    border-radius: 12px;
+}
+.introduccion h2,
+.mapa-imagen h2 {
+    text-align: center;
+    color: orange;
+    font-size: 28px;
+    margin-top: 0;
+}
+.introduccion p,
+.mapa-imagen p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.introduccion {
+    border: 4px solid purple;
+}
+.introduccion p {
+    max-width: 950px;
+    margin: 15px auto;
+}
+.mapa-imagen {
+    border: 4px solid orange;
+    text-align: center;
+}
+.mapa-imagen p {
+    max-width: 950px;
+    margin: 15px auto 25px;
+}
+.mapa-imagen figure {
+    margin: 0;
+}
+.mapa-imagen img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid purple;
+    border-radius: 10px;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid purple;
+}
+footer p {
+    color: white;
+    font-size: 13px;
+}
+footer img {
+    width: 28px;
+    height: auto;
+}
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+    }
+    h1 {
+        width: 94%;
+        font-size: 30px;
+        border-width: 6px;
+        padding: 12px;
+    }
+    .breadcrumbs {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .introduccion,
+    .mapa-imagen {
+        width: 94%;
+        padding: 16px;
+    }
+    .introduccion h2,.mapa-imagen h2 {
+        font-size: 23px;
+    }
+    footer {
+        text-align: center;
+    }
+}

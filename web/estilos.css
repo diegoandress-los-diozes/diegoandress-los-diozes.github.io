@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("gta-6-official.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+main {
+    width: 100%;
+    flex: 1;
+}
+header {
+    width: 100%;
+    padding-top: 20px;
+}
+h1 {
+    width: 92%;
+    max-width: 1100px;
+    font-size: clamp(30px, 5vw, 60px);
+    color: black;
+    margin: auto;
+    padding: 15px;
+    border: 10px solid purple;
+    background-color: rgb(255, 187, 0);
+    text-align: center;
+}
+.breadcrumbs {
+    width: 92%;
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 0 12px;
+}
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 12px 16px;
+    gap: 8px;
+    border: 1px solid rgba(255, 0, 200, 0.65);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.85);
+}
+.breadcrumbs li {
+    color: white;
+    padding: 0;
+    font-size: 15px;
+    cursor: default;
+}
+.breadcrumbs li + li::before {
+    content: "›";
+    margin-right: 8px;
+    color: orange;
+    font-weight: bold;
+}
+.breadcrumbs a {
+    color: #ff55bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.breadcrumbs a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+.breadcrumbs [aria-current="page"] {
+    color: white;
+    font-weight: bold;
+}
+.menu-principal {
+    width: 95%;
+    max-width: 1200px;
+    margin: 15px auto;
+}
+.menu-principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+.menu-principal li {
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.menu-principal li:hover {
+    color: orange;
+}
+.cuadros {
+    width: 94%;
+    max-width: 1200px;
+    margin: 30px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+}
+.morado {
+    flex: 1 1 420px;
+    max-width: 560px;
+    min-width: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 5px solid purple;
+    color: white;
+    padding: 15px;
+}
+.naranja {
+    flex: 1 1 420px;
+    max-width: 560px;
+    min-width: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 5px solid orange;
+    color: white;
+    padding: 15px;
+}
+.cuadros h2 {
+    text-align: center;
+    color: orange;
+}
+.cuadros h3 {
+    color: #bd62ff;
+}
+.cuadros p {
+    text-align: justify;
+    line-height: 1.6;
+}
+.cuadros img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid purple;
+}
+footer p {
+    color: white;
+    font-size: 13px;
+}
+footer img {
+    width: 28px;
+    height: auto;
+}
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+    }
+    h1 {
+        width: 94%;
+        font-size: 30px;
+        border-width: 6px;
+        padding: 12px;
+    }
+    .breadcrumbs {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .introduccion,
+    .mapa-imagen {
+        width: 94%;
+        padding: 16px;
+    }
+    .introduccion h2,.mapa-imagen h2 {
+        font-size: 23px;
+    }
+    footer {
+        text-align: center;
+    }
+}
+.menu-principal li a,
+section ol li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu-principal li:hover a,
+.menu-principal li a:hover,
+section ol li:hover a,
+section ol li a:hover {
+    color: orange;
+    text-decoration: none;
+}
